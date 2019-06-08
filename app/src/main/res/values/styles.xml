@@ -12,6 +12,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowAnimationStyle">@style/Animation.MyCustomAnimation</item>-->
     </style>
 
     <style name="dialog_open_animation">
@@ -21,5 +22,9 @@
     <style name="Theme_Dialog" parent="android:Theme.Holo.Dialog">
         <item name="android:windowMinWidthMajor">90%</item>
         <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+    <style name="Animation.MyCustomAnimation" parent="android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_up</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_up</item>
     </style>
 </resources>
