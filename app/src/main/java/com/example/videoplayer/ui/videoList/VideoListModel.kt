@@ -2,8 +2,9 @@ package com.example.videoplayer.ui.videoList
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-data class VideoListModel(
+data class VideoListModel (
     @SerializedName("description")
     val description: String,
     @SerializedName("id")
@@ -14,4 +15,4 @@ data class VideoListModel(
     val title: String,
     @SerializedName("url")
     val url: String
-)
+):Serializable

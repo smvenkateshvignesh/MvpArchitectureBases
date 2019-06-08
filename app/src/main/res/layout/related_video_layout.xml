@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+    <android.support.constraint.Guideline
+            android:id="@+id/guideRelatedVideoLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="10dp"/>
+    <android.support.constraint.Guideline
+            android:id="@+id/guideRelatedVideoRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="10dp"/>
+    <ImageView
+            android:id="@+id/imgRelatedVideoThumbnail"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintLeft_toLeftOf="@id/guideRelatedVideoLeft"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+    />
+    <TextView
+            android:id="@+id/tvRelatedVideoTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/imgRelatedVideoThumbnail"
+            app:layout_constraintRight_toRightOf="@id/guideRelatedVideoRight"
+            app:layout_constraintTop_toTopOf="@id/imgRelatedVideoThumbnail"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/text_color_video_playing"
+            android:textSize="14sp"
+            tools:text="Title"
+    />
+
+    <TextView
+            android:id="@+id/tvRelatedVideoDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/tvRelatedVideoTitle"
+            app:layout_constraintRight_toRightOf="@id/guideRelatedVideoRight"
+            app:layout_constraintTop_toBottomOf="@id/tvRelatedVideoTitle"
+            tools:text="Description"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_color_video_playing"
+            android:textSize="12sp"
+    />
+
+
+</android.support.constraint.ConstraintLayout>
