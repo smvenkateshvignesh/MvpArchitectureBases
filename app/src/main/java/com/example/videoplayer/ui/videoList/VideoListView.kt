@@ -1,10 +1,10 @@
-package com.example.videoplayer.main
+package com.example.videoplayer.ui.videoList
 
 import com.example.videoplayer.base.MvpView
 
 /**
  * Created by Venkatesh Vignesh on 6/7/2019.
  */
-interface MainView:MvpView {
+interface VideoListView:MvpView {
      fun showList(videosLists: ArrayList<VideoListModel>?)
 }

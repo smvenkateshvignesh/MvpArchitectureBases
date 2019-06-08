@@ -1,4 +1,4 @@
-package com.example.videoplayer.main
+package com.example.videoplayer.ui.videoList
 
 
 import com.google.gson.annotations.SerializedName

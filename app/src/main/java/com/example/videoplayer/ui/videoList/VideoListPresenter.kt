@@ -1,4 +1,4 @@
-package com.example.videoplayer.main
+package com.example.videoplayer.ui.videoList
 
 import com.example.videoplayer.base.BasePresenter
 import retrofit2.Call
@@ -8,7 +8,7 @@ import retrofit2.Response
 /**
  * Created by Venkatesh Vignesh on 6/7/2019.
  */
-class MainPresenter:BasePresenter<MainView>() {
+class VideoListPresenter:BasePresenter<VideoListView>() {
     fun callVideoApi() {
         getMvpView().showProgress()
         getAppDataManager().getVideoLists("pretty").enqueue(object : Callback<ArrayList<VideoListModel>>{
