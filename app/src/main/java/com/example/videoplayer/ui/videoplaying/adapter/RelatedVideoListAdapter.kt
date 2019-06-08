@@ -1,7 +1,7 @@
 package com.example.videoplayer.ui.videoplaying.adapter
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,10 +13,10 @@ import com.example.videoplayer.ui.videoList.VideoListModel
 
 
 class RelatedVideoListAdapter(private val mContext: Context, private val videoList: ArrayList<VideoListModel>) :
-    RecyclerView.Adapter<RelatedVideoListAdapter.MyHolder>() {
+    androidx.recyclerview.widget.RecyclerView.Adapter<RelatedVideoListAdapter.MyHolder>() {
     private var onClickListener: OnClickListener?=null
 
-    inner class MyHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class MyHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {
         private val imgVideoThumbnail: ImageView = itemView.findViewById(R.id.imgRelatedVideoThumbnail)
         private val tvVideoDescription: TextView = itemView.findViewById(R.id.tvRelatedVideoDescription)
         private val tvVideoTitle: TextView = itemView.findViewById(R.id.tvRelatedVideoTitle)

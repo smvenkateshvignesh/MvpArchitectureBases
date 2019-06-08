@@ -1,7 +1,7 @@
 package com.example.videoplayer.ui.videoplaying
 
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.videoplayer.R
 import com.example.videoplayer.base.BaseActivity
 import com.example.videoplayer.ui.videoList.VideoListModel
