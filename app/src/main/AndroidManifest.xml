@@ -19,6 +19,10 @@
         <activity
                 android:name="com.example.videoplayer.ui.videoList.VideoListActivity"
                 android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".ui.splashscreen.SplashScreen"
+                  android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
