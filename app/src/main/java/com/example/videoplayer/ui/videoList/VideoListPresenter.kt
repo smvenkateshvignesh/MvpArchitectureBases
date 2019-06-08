@@ -14,12 +14,14 @@ class VideoListPresenter:BasePresenter<VideoListView>() {
         getAppDataManager().getVideoLists("pretty").enqueue(object : Callback<ArrayList<VideoListModel>>{
             override fun onFailure(call: Call<ArrayList<VideoListModel>>, t: Throwable) {
                 getMvpView().hideProgress()
+                getMvpView().showError("Something went wrong!")
             }
 
             override fun onResponse(
                 call: Call<ArrayList<VideoListModel>>,
                 response: Response<ArrayList<VideoListModel>>
             ) {
+                getMvpView().hideProgress()
                 val videosLists:ArrayList<VideoListModel>? = response.body()
                 getMvpView().showList(videosLists)
             }

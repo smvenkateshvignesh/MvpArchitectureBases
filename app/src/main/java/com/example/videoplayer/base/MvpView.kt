@@ -9,5 +9,6 @@ package com.example.videoplayer.base
 interface MvpView{
     fun hideProgress()
     fun showProgress()
+    fun showError(mess: String)
 
 }
